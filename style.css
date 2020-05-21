@@ -1,0 +1,222 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url(assets/img/background1.jpg);
+	color: #fff;
+}
+
+ /* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+#navbar a:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+#navbar a.active{
+	background-color: #4CAF50;
+	color: white;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+} 
+
+/*.btn{
+	padding: 10px 16px;
+	cursor: pointer;
+}*/
+
+h1{
+	font-size: 6rem;
+	line-height: 5.5rem;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Press Start 2P', cursive;
+
+}
+.names1{
+	margin-bottom: 0;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+.names2{
+	color:  #fc3004;
+}
+div h2{
+	padding: 60px 10px 10px 10px;
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Montserrat Subrayada', sans-serif;
+
+}
+p{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Kameron', serif;
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+/*.team {
+  background: url(background2.jpg);
+  opacity: 90%;
+}
+*/
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px /*rgba(0, 0, 0, 0.1)*/ #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member:hover img {
+  transform: scale(1.1);
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b4c1c4;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #c2cdcf;
+}
+
+.team .member .social a i {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #01b1d7;
+}
+
+.team .member .social a + a {
+  margin-left: 8px;
+}
+
+.social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background:  #5d5d5c;
+  color: #fff;
+  line-height: 1;
+  padding:10px 0;
+  margin-right: 4px;
+  border-radius: 5px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #01b1d7;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.twitter .facebook .instagram .linkedin .google-plus{
+	align-items: left;
+	padding-right: 10px;
+}
+
+#footer{
+	width: 100%;
+	padding: 0 0 30px 0;
+	background-color:  #5a5b5b;
+	color: #fff;
+	text-align: center;
+	opacity: 80%
+}
+
+#footer .credits {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  opacity: 100%;
+}
+
+#footer #sadman{
+	font-family: 'Permanent Marker', cursive;
+}
